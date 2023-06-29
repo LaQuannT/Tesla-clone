@@ -7,7 +7,7 @@
     <title>Tesla-Clone</title>
   </head>
   <body>
-    <header>
+    <header class="page-hdr">
       <a href="#">
         <svg class="logo" viewBox="0 0 342 35">
           <path
@@ -35,9 +35,10 @@
 
       <button type="button" id="btn-nav-phone">Menu</button>
       <!-- menu nav modal  for small screens -->
-      <div class="modal" hidden>
+      <div class="modal">
         <nav class="nav-phone">
-          <ul>
+          <button type="button" class="btn-close">X</button>
+          <ul class="nav-list">
             <li><a href="#">Model S</a></li>
             <li><a href="#">Model 3</a></li>
             <li><a href="#">Model X</a></li>
@@ -47,7 +48,6 @@
             <li><a href="#">Support</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">Account</a></li>
-            <li><a href="#">Menu</a></li>
           </ul>
         </nav>
       </div>
@@ -63,14 +63,16 @@
       </header>
       <footer>
         <div class="btn-group">
-          <button type="button" class="btn-primary">Explore Inventory</button>
-          <button type="button" class="btn-secondary">Custom Order</button>
+          <button type="button" class="btn btn-primary">
+            Explore Inventory
+          </button>
+          <button type="button" class="btn btn-secondary">Custom Order</button>
         </div>
         <p class="footer-txt">Schedule a Test Drive</p>
       </footer>
     </section>
     <!-- model y content -->
-    <section id="modal-y-content" class="content">
+    <section id="model-y-content" class="content">
       <header class="content-hdr">
         <h3 class="content-title">Model Y</h3>
         <p class="info-txt">
@@ -80,8 +82,10 @@
       </header>
       <footer>
         <div class="btn-group">
-          <button type="button">Explore Inventory</button>
-          <button type="button">Custom Order</button>
+          <button type="button" class="btn btn-primary">
+            Explore Inventory
+          </button>
+          <button type="button" class="btn btn-secondary">Custom Order</button>
         </div>
         <p class="footer-txt">Schedule a Test Drive</p>
       </footer>
@@ -93,42 +97,46 @@
       </header>
       <footer>
         <div class="btn-group">
-          <button type="button" class="btn-primary">Explore Inventory</button>
-          <button type="button" class="btn-secondary">Test Drive</button>
+          <button type="button" class="btn btn-primary">
+            Explore Inventory
+          </button>
+          <button type="button" class="btn btn-secondary">Test Drive</button>
         </div>
         <p class="footer-txt">Only available as left-hand drive</p>
       </footer>
     </section>
     <!-- Solar and Powerwall  content -->
-    <section id="s&p-content" class="content">
+    <section id="solar-content" class="content">
       <header class="content-hdr">
         <h3 class="content-title">Solar and Powerwall</h3>
         <p class="info-txt">Power Everything</p>
       </header>
       <footer>
-        <button type="button" class="btn-primary">Learn More</button>
+        <button type="button" class="btn btn-primary">Learn More</button>
       </footer>
     </section>
     <!-- Model X content -->
     <section id="model-x-content" class="content">
-      <header>
-        <h3 class="content-hdr">Model X</h3>
+      <header class="content-hdr">
+        <h3 class="content-title">Model X</h3>
       </header>
       <footer>
         <div class="btn-group">
-          <button type="button" class="btn-primary">Explore Inventory</button>
-          <button type="button" class="btn-secondary">Test Drive</button>
+          <button type="button" class="btn btn-primary">
+            Explore Inventory
+          </button>
+          <button type="button" class="btn btn-secondary">Test Drive</button>
         </div>
         <p class="footer-txt">Only available as left-hand drive</p>
       </footer>
     </section>
     <!-- Accessories -->
-    <section id="Accessories" class="content">
+    <section id="accessories-content" class="content">
       <header class="content-hdr">
         <h3 class="content-title">Accessories</h3>
       </header>
       <footer>
-        <button type="button" class="btn-dark">Shop Now</button>
+        <button type="button" class="btn btn-dark">Shop Now</button>
       </footer>
     </section>
   </body>
