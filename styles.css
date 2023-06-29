@@ -144,19 +144,21 @@ footer {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
 }
 
-.nav-phone {
+aside {
   position: fixed;
+  z-index: 4;
+  transition: right 0.5s ease;
   right: -320px;
   width: 320px;
   background-color: white;
   height: 100%;
 }
 
-.nav-phone.active {
+aside.active {
   right: 0;
 }
 
