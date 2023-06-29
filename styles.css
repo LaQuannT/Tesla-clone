@@ -42,15 +42,19 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 1.25rem;
+  padding: 1rem 1.3rem;
   background: transparent;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
 }
 
 .logo {
   width: 120px;
+}
+
+.nav-desktop-group {
+  display: none;
 }
 
 #btn-nav-phone {
@@ -213,4 +217,55 @@ a {
 
 #accessories-content {
   background-image: url('./assets/Homepage-Accessories-Mobile.avif');
+}
+
+@media (min-width: 768px) {
+  .btn-group {
+    flex-direction: row;
+  }
+
+  .btn {
+    padding: 10px 75px;
+  }
+
+  #model-3-content {
+    background-image: url('./assets/Homepage-Model-3-Desktop-RHD.avif');
+  }
+
+  #model-y-content {
+    background-image: url('./assets/Homepage-Model-Y-Global-Desktop.avif');
+  }
+
+  #model-s-content {
+    background-image: url('./assets/Model-S-desktop.avif');
+  }
+  #solar-content {
+    background-image: url('/assets/Desktop_SolarPanels.avif');
+  }
+
+  #model-x-content {
+    background-image: url('./assets/Model-X-Desktop-LHD.avif');
+  }
+
+  #accessories-content {
+    background-image: url('./assets/Desktop_Accessories.avif');
+  }
+}
+
+@media (min-width: 992px) {
+  #btn-nav-phone {
+    display: none;
+  }
+
+  .page-hdr {
+    justify-content: space-evenly;
+  }
+
+  .nav-desktop-group {
+    display: block;
+  }
+
+  a {
+    margin-right: 10px;
+  }
 }
