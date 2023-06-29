@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="./script.js" defer></script>
     <title>Tesla-Clone</title>
   </head>
   <body>
@@ -32,24 +33,24 @@
       </nav>
 
       <button type="button" id="btn-nav-phone">Menu</button>
-      <!-- menu nav modal  for small screens -->
-      <div class="modal">
-        <nav class="nav-phone">
-          <button type="button" class="btn-close">X</button>
-          <ul class="nav-list">
-            <li><a href="#">Model S</a></li>
-            <li><a href="#">Model 3</a></li>
-            <li><a href="#">Model X</a></li>
-            <li><a href="#">Model Y</a></li>
-            <li><a href="#">Powerwall</a></li>
-            <li><a href="#">Charging</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Account</a></li>
-          </ul>
-        </nav>
-      </div>
     </header>
+    <!-- menu nav modal  for small screens -->
+    <div id="modal" class="modal">
+      <nav id="mobile-nav" class="nav-phone">
+        <button type="button" id="btn-nav-close" class="btn-close">X</button>
+        <ul class="nav-list">
+          <li><a href="#">Model S</a></li>
+          <li><a href="#">Model 3</a></li>
+          <li><a href="#">Model X</a></li>
+          <li><a href="#">Model Y</a></li>
+          <li><a href="#">Powerwall</a></li>
+          <li><a href="#">Charging</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </nav>
+    </div>
     <!-- model 3 content -->
     <section id="model-3-content" class="content">
       <header class="content-hdr">
